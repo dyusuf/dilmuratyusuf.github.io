@@ -12,7 +12,7 @@ toolsets and reference data for analysis of human genomics, microbial
 genomics, proteomics etc.
 
 There are some introductory slides available
-[here](https://docs.google.com/presentation/d/1dzHagGkswjH7MOZ7OACVXGU-riBs33K3J5lWpnCpPhs/pub?start=false&loop=false&slide=id.g537781ff1_2_18).
+[here](https://github.com/dyusuf/galaxy_basics/raw/master/galaxy_tutorial/Galaxy_Basics.pdf).
 
 Basically, the Galaxy interface is separated into 3 parts. The tool list
 on the left, the viewing pane in the middle and the analysis and data
