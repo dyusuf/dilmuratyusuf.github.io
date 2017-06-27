@@ -156,8 +156,8 @@ fasta, fastq, vcf, GFF, Genbank, tabular etc.</p>
 Galaxy. (there is a size limit)</p>
 <ul>
 <li>
-<p>Download the following file to your computer:
-    <em>https://www.dropbox.com/s/1oryi4ynczi7yhk/Contig_stats.txt.gz?raw=1</em></p>
+<p>Click and save the following file to your computer:
+    <a href="https://www.dropbox.com/s/1oryi4ynczi7yhk/Contig_stats.txt.gz?raw=1">Contig_stats.txt.gz</a></p>
 <ul>
 <li>From the Galaxy tool panel, click on <strong>Get Data -&gt; Upload
     File</strong></li>
@@ -252,7 +252,7 @@ icon. We now have 2 columns instead of the 18 in the original file.</p>
     beginning</strong> and set the following:</li>
 <li>"Remove First": <em>1</em></li>
 <li>"from": <em>Cut on data X</em></li>
-<li>click <strong>Execute</strong></li>
+<li>Click <strong>Execute</strong></li>
 </ul>
 <p>Note the new file is the same as the previous one without the header
 line.</p>
@@ -276,18 +276,19 @@ to re-use it on more/new data.</p>
 <p><strong>Step 1: Find overlaps</strong></p>
 <ul>
 <li>From the tool panel, click on <strong>Genomic Interval Operations -&gt; Intersect interval files</strong></li>
-<li>Return: Overlapping Intervals of  <em>UCSC Main on Mouse: refGene (genome)</em>
-that intersect <em>peak interval</em></li>
+<li>Input (<strong>BED/VCF/GFF/BAM file</strong>): select <em>UCSC Main on Mouse: refGene (genome)</em></li>
+<li>Input (<strong>One or more BAM/BED/GFF/VCF file(s)</strong>): select <em>peak interval</em></li>
+<li>Click <strong>Execute</strong></li>
 </ul>
 <p>The order of the inputs is important! We want to end up with a list of genes,
 so the corresponding dataset needs to be the first input.</p>
 <p><strong>Step 2: Count genes on different chromosomes</strong></p>
 <p>To get a better overview of the genes we obtained, we want to look at their distribution across the different chromosomes.</p>
 <ul>
-<li>From the tool panel, click on <strong>Statistics -&gt; count occurrences of each record</strong></li>
+<li>From the tool panel, click on <strong>Statistics -&gt; Count</strong></li>
 <li>Input: result from step 1 (Intersect interval files on data X and data Y)</li>
-<li>Select column 1 (c1) with the chromosome names</li>
-<li>click <strong>Execute</strong></li>
+<li>Select <em>Column: 1</em> with the chromosome names</li>
+<li>Click <strong>Execute</strong></li>
 </ul>
 <p><strong>Step 3: Draw barchart</strong></p>
 <p>Galaxy has a second option to visualise tabular data, with built-in dynamic visualisations:</p>
@@ -305,7 +306,7 @@ so the corresponding dataset needs to be the first input.</p>
 </ul>
 <p><strong>Step 4: Name  your history</strong></p>
 <p>In the history column clicks on "Unnamed history" at the top to rename it.</p>
-<p><strong>Step 5: Make a workflow out of steps 1 to 3</strong></p>
+<p><strong>Step 5: Make a workflow out of steps 1 to 2</strong></p>
 <ul>
 <li>Click on the history options and select "Extract workflow"</li>
 <li>select the steps you wish to include in the workflow</li>
@@ -324,7 +325,7 @@ Share your new workflow with the person to your left.</p>
 <ul>
 <li>Click on your workflow's name and select "Share or publish"</li>
 <li>Click "Share with a user"</li>
-<li>Enter the email address of the person to your left (the same as he/she uses to login to Galaxy)</li>
+<li>Select the email address of the person to your left (the same as he/she uses to login to Galaxy)</li>
 <li>Hit "Share"</li>
 <li>Wait for the person on your right to do the same</li>
 <li>Reload the workflows by clicking again on "Workflow" in the top menu</li>
@@ -334,7 +335,7 @@ Share your new workflow with the person to your left.</p>
 </ul>
 <h3 id="running-the-workflow">Running the workflow</h3>
 <p>We can now make a new history called "Test" and run the workflow on
-it’s data, automating steps from 1 to 3.</p>
+it’s data, automating steps from 1 to 2.</p>
 <h2 id="what-now">What now?</h2>
 <p>Remember how we started a new history at the beginning? If you want to
 see any of your old histories, click on the history menu button
@@ -390,5 +391,5 @@ data, run tools and view their outputs. For more tutorials, see</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2017-06-27 11:56:44
+Build Date UTC : 2017-06-27 14:32:29
 -->
