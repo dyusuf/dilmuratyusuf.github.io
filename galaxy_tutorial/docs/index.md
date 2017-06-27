@@ -89,8 +89,8 @@ We will tell Galaxy what type of file each one is as we upload it.
 With this method, you can get most of the files on your own computer into
 Galaxy. (there is a size limit)
 
--   Download the following file to your computer:
-    *https://www.dropbox.com/s/1oryi4ynczi7yhk/Contig_stats.txt.gz?raw=1*
+-   Click and save the following file to your computer:
+    [Contig_stats.txt.gz](https://www.dropbox.com/s/1oryi4ynczi7yhk/Contig_stats.txt.gz?raw=1)
 
     -   From the Galaxy tool panel, click on **Get Data -&gt; Upload
         File**
@@ -189,7 +189,7 @@ icon. We now have 2 columns instead of the 18 in the original file.
     beginning** and set the following:
 -   "Remove First": *1*
 -   "from": *Cut on data X*
--   click **Execute**
+-   Click **Execute**
 
 Note the new file is the same as the previous one without the header
 line.
@@ -219,8 +219,9 @@ to re-use it on more/new data.
 **Step 1: Find overlaps**
 
 - From the tool panel, click on **Genomic Interval Operations -&gt; Intersect interval files**
-- Return: Overlapping Intervals of  *UCSC Main on Mouse: refGene (genome)*
-that intersect *peak interval*
+- Input (**BED/VCF/GFF/BAM file**): select *UCSC Main on Mouse: refGene (genome)*
+- Input (**One or more BAM/BED/GFF/VCF file(s)**): select *peak interval*
+- Click **Execute**
 
 The order of the inputs is important! We want to end up with a list of genes,
 so the corresponding dataset needs to be the first input.
@@ -229,10 +230,10 @@ so the corresponding dataset needs to be the first input.
 
 To get a better overview of the genes we obtained, we want to look at their distribution across the different chromosomes.
 
-- From the tool panel, click on **Statistics -&gt; count occurrences of each record**
+- From the tool panel, click on **Statistics -&gt; Count**
 - Input: result from step 1 (Intersect interval files on data X and data Y)
-- Select column 1 (c1) with the chromosome names
-- click **Execute**
+- Select *Column: 1* with the chromosome names
+- Click **Execute**
 
 **Step 3: Draw barchart**
 
@@ -253,7 +254,7 @@ Galaxy has a second option to visualise tabular data, with built-in dynamic visu
 
 In the history column clicks on "Unnamed history" at the top to rename it.
 
-**Step 5: Make a workflow out of steps 1 to 3**
+**Step 5: Make a workflow out of steps 1 to 2**
 
 - Click on the history options and select "Extract workflow"
 - select the steps you wish to include in the workflow
@@ -276,7 +277,7 @@ Top menu: Workflow
 
 - Click on your workflow's name and select "Share or publish"
 - Click "Share with a user"
-- Enter the email address of the person to your left (the same as he/she uses to login to Galaxy)
+- Select the email address of the person to your left (the same as he/she uses to login to Galaxy)
 - Hit "Share"
 - Wait for the person on your right to do the same
 - Reload the workflows by clicking again on "Workflow" in the top menu
@@ -288,7 +289,7 @@ Top menu: Workflow
 ### Running the workflow
 
 We can now make a new history called "Test" and run the workflow on
-it’s data, automating steps from 1 to 3.
+it’s data, automating steps from 1 to 2.
 
 
 What now?
